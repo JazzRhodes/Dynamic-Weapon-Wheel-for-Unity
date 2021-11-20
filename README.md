@@ -5,4 +5,8 @@ It would be nice, I thought, to have a wheel that you can whip up right there in
 One where the segments can dynamically resize themselves if the segment number should change. 
 This is what I came up with.
 Behold, my first actual contribution.
-![caption](https://github.com/DepressedAndWhatnot/Dynamic-Weapon-Wheel-for-Unity/raw/main/WeaponWheelDemo.mkv)
+
+
+
+https://user-images.githubusercontent.com/94728326/142717448-987dd476-fdfb-4026-99da-17e515567548.mp4
+
