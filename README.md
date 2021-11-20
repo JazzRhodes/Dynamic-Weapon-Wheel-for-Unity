@@ -1,6 +1,6 @@
 # Dynamic-Weapon-Wheel-for-Unity
 Thanks to some lovely people at r/Unity3D, I was able to put together this wheel. It's for anybody who wishes to use it. I recently needed a weapon wheel and I didn't know at first the number of segments I wanted the wheel to be made of. 
-All the tutorials I found online were tutorials of people going into their image editing software and chopping a circle up. 
+All the tutorials I found online were tutorials of people going into their image editing software and chopping a circle up to form the wheel. 
 It would be nice, I thought, to have a wheel that you can whip up right there in Unity. 
 So this is what I came up with so far.
 
