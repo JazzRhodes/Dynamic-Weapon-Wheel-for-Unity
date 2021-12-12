@@ -116,14 +116,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoUpdate: 1
+  updateInPlaymode: 0
   wheelSegmentPrefab: {fileID: 9118186150905742961, guid: c1c88bd9ff14b10419995bb11950db23, type: 3}
   numberOfSegments: 1
   wheelCenter: {fileID: 5304491402662656981}
   centerSegmentOne: 0
-  updateInPlaymode: 0
   segmentPrefix: 'Item '
   rotateTextLocal: 0
+  rotateImageLocal: 1
   counterClockwiseLayout: 0
+  segmentSize: 10
+  labelWheelNumbers: 1
 --- !u!1 &5304491402662656553
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +150,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5304491402662656553}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_ConstrainProportionsScale: 1

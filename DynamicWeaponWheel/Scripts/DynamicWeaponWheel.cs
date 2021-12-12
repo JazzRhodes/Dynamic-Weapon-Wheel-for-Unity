@@ -25,7 +25,6 @@ public class DynamicWeaponWheel : MonoBehaviour {
     public float segmentSize = 10;
     public bool labelWheelNumbers = true;
     void Awake() {
-        currentSegments = new List<WheelSegment>();
     }
     bool inEditor() {
         return Application.isEditor;
@@ -117,6 +116,8 @@ public class DynamicWeaponWheel : MonoBehaviour {
         DestroyAllChildren(wheelCenter);
         if (currentSegments != null) {
             currentSegments.Clear();
+        } else {
+            currentSegments = new List<WheelSegment>();
         }
     }
     public void DestroyAllChildren(Transform t) {
