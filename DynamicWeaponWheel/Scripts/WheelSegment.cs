@@ -8,10 +8,15 @@ public class WheelSegment : Image {
     public int segmentNumber;
     public Transform textAxis;
     public Image textBgImage;
-    public void UpdateText(string prefix = ""){
-        segmentText.text = prefix + (segmentNumber + 1).ToString();
+    public bool showNumbers { get; set; }
+    public void UpdateText(string prefix = "") {
+        int segNum = (segmentNumber + 1);
+        if (showNumbers) {
+            segmentText.text = prefix + segNum.ToString();
+        } else {
+            segmentText.text = prefix;
+        }
     }
-    
     public override bool IsRaycastLocationValid(Vector2 screenPoint, Camera eventCamera) {
         Vector2 localMousePos;
         if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, screenPoint, eventCamera, out localMousePos)) {

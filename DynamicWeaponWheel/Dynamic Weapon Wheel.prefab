@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoUpdate: 1
-  wheelSegmentPrefab: {fileID: 9118186150905742961, guid: 820f5908ea78c3e41b621a01e21c1bc4, type: 3}
+  wheelSegmentPrefab: {fileID: 9118186150905742961, guid: c1c88bd9ff14b10419995bb11950db23, type: 3}
   numberOfSegments: 1
   wheelCenter: {fileID: 5304491402662656981}
   centerSegmentOne: 0

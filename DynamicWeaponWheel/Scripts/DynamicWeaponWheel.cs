@@ -8,21 +8,22 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 #endif
 public class DynamicWeaponWheel : MonoBehaviour {
-    public bool autoUpdate = true;
+    public bool autoUpdate = true, updateInPlaymode;
     public WheelSegment wheelSegmentPrefab;
     [Range(1, 20)] public int numberOfSegments;
     public Transform wheelCenter;
     public bool centerSegmentOne;
-    public bool updateInPlaymode;
     bool initialized;
     bool notInPrefabMode;
     public string segmentPrefix = "Item ";
-    public bool rotateTextLocal;
+    public bool rotateTextLocal = false, rotateImageLocal = true;
     List<WheelSegment> currentSegments;
     float fillAmount = 0, fillAmountConverted = 0;
     int segments;
     Vector3[] wheelSegmentPositions, imageRadiusPositions;
     public bool counterClockwiseLayout;
+    public float segmentSize = 10;
+    public bool labelWheelNumbers = true;
     void Awake() {
         currentSegments = new List<WheelSegment>();
     }
@@ -56,55 +57,61 @@ public class DynamicWeaponWheel : MonoBehaviour {
     }
     public void GenerateWheel() {
         ClearWheel();
-        if (wheelSegmentPrefab) {
-            segments = numberOfSegments;
-            wheelSegmentPositions = SpawnObjectsAroundCircleEvenly(segments, wheelCenter, 0);
-            imageRadiusPositions = SpawnObjectsAroundCircleEvenly(segments, wheelCenter, 0);
-            for (int i = 0; i < segments; i++) {
-                GenerateSegments(i);
-            }
-            Quaternion wheelRot = Quaternion.identity;
-            Quaternion centeredRot = Quaternion.identity;
-            Quaternion flippedRot = Quaternion.identity;
-            if (!counterClockwiseLayout) {
-                flippedRot = centeredRot * Quaternion.Euler(0, 180, 0);
-            }
-            if (centerSegmentOne) {
-                centeredRot = wheelRot * Quaternion.Euler(0, 0, -(fillAmountConverted / 2f));
-            }
-            Quaternion finalRotation = wheelRot * flippedRot * centeredRot;
-            wheelCenter.localRotation = finalRotation;
-            if (!rotateTextLocal) {
-                for (int i = 0; i < currentSegments.Count; i++) {
+        segments = numberOfSegments;
+        wheelSegmentPositions = SpawnObjectsAroundCircleEvenly(segments, wheelCenter, 0);
+        imageRadiusPositions = SpawnObjectsAroundCircleEvenly(segments, wheelCenter, 0);
+        for (int i = 0; i < segments; i++) {
+            GenerateSegments(i);
+        }
+        Quaternion wheelRot = Quaternion.identity;
+        Quaternion centeredRot = Quaternion.identity;
+        Quaternion flippedRot = Quaternion.identity;
+        if (!counterClockwiseLayout) {
+            flippedRot = centeredRot * Quaternion.Euler(0, 180, 0);
+        }
+        if (centerSegmentOne) {
+            centeredRot = wheelRot * Quaternion.Euler(0, 0, -(fillAmountConverted / 2f));
+        }
+        Quaternion finalRotation = wheelRot * flippedRot * centeredRot;
+        wheelCenter.localRotation = finalRotation;
+        if (!rotateTextLocal) {
+            for (int i = 0; i < currentSegments.Count; i++) {
+                if (!rotateImageLocal) {
                     currentSegments[i].textBgImage.transform.rotation = Quaternion.identity;
-                    currentSegments[i].segmentText.transform.rotation = Quaternion.identity;
                 }
-            } else {
-                if (counterClockwiseLayout) {
-                    for (int i = 0; i < currentSegments.Count; i++) {
-                        currentSegments[i].textBgImage.transform.localRotation = Quaternion.identity;
-                        currentSegments[i].segmentText.transform.localRotation = Quaternion.identity;
-                    }
+                currentSegments[i].segmentText.transform.rotation = Quaternion.identity;
+            }
+        } else {
+            if (counterClockwiseLayout) {
+                for (int i = 0; i < currentSegments.Count; i++) {
+                    currentSegments[i].textBgImage.transform.localRotation = Quaternion.identity;
+                    currentSegments[i].segmentText.transform.localRotation = Quaternion.identity;
                 }
             }
         }
     }
     void GenerateSegments(int index) {
-        fillAmount = (1f / segments);
-        float rotValue = RemapRange(fillAmount, 0, 1, 0, 360) * (index + 1);
-        fillAmountConverted = RemapRange(fillAmount, 0, 1, 0, 360);
-        Quaternion newSegRot = Quaternion.Euler(0, 0, rotValue);
-        Quaternion newTextRot = Quaternion.Euler(0, 0, -(fillAmountConverted / 2f));
-        Vector3 newPos = wheelSegmentPositions[index];
-        Vector3 newImagePos = imageRadiusPositions[index];
-        //form segments into circle
-        var newWheelSegment = Instantiate(wheelSegmentPrefab, newPos, newSegRot, wheelCenter);
-        newWheelSegment.segmentNumber = index;
-        newWheelSegment.UpdateText(segmentPrefix);
-        newWheelSegment.fillAmount = fillAmount;
-        newWheelSegment.transform.localRotation = newSegRot;
-        newWheelSegment.textAxis.localRotation = newTextRot;
-        currentSegments.Add(newWheelSegment);
+        if (wheelSegmentPrefab) {
+            fillAmount = (1f / segments);
+            float rotValue = (RemapRange(fillAmount, 0, 1, 0, 360) * (index + 1));
+            fillAmountConverted = RemapRange(fillAmount, 0, 1, 0, 360);
+            Quaternion newSegRot = Quaternion.Euler(0, 0, rotValue);
+            Quaternion newTextRot = Quaternion.Euler(0, 0, -(fillAmountConverted / 2f));
+            Vector3 newPos = wheelSegmentPositions[index];
+            Vector3 newImagePos = imageRadiusPositions[index];
+            //form segments into circle
+            var newWheelSegment = Instantiate(wheelSegmentPrefab, newPos, newSegRot, wheelCenter);
+            newWheelSegment.segmentNumber = index;
+            newWheelSegment.showNumbers = labelWheelNumbers;
+            newWheelSegment.UpdateText(segmentPrefix);
+            newWheelSegment.fillAmount = fillAmount;
+            newWheelSegment.transform.localRotation = newSegRot;
+            newWheelSegment.textAxis.localRotation = newTextRot;
+            Vector3 scale = Vector3.zero;
+            scale.Set(segmentSize, segmentSize, segmentSize);
+            newWheelSegment.transform.localScale = scale;
+            currentSegments.Add(newWheelSegment);
+        }
     }
     void ClearWheel() {
         DestroyAllChildren(wheelCenter);
