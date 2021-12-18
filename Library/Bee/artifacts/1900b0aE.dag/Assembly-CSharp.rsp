@@ -327,9 +327,9 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2022.1.0b2/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.1.0b2/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.1.0b2/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
--r:"C:/Users/Saxon/Documents/GitHub/Dynamic-Weapon-Wheel-for-Unity/DynamicWeaponWheel/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.2/Runtime/Newtonsoft.Json.dll"
--r:"C:/Users/Saxon/Documents/GitHub/Dynamic-Weapon-Wheel-for-Unity/DynamicWeaponWheel/Library/PackageCache/com.unity.testtools.codecoverage@1.1.0/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/Users/Saxon/Documents/GitHub/Dynamic-Weapon-Wheel-for-Unity/DynamicWeaponWheel/Library/PackageCache/com.unity.visualscripting@1.7.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"D:/Github/Dynamic-Weapon-Wheel-for-Unity/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"D:/Github/Dynamic-Weapon-Wheel-for-Unity/Library/PackageCache/com.unity.testtools.codecoverage@1.1.0/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"D:/Github/Dynamic-Weapon-Wheel-for-Unity/Library/PackageCache/com.unity.visualscripting@1.7.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -353,9 +353,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/DynamicWeaponWheel/Scripts/DynamicWeaponWheel.cs"
-"Assets/DynamicWeaponWheel/Scripts/RaycastMask.cs"
-"Assets/DynamicWeaponWheel/Scripts/WheelSegment.cs"
+"Assets/Scripts/DynamicWeaponWheel.cs"
+"Assets/Scripts/RaycastMask.cs"
+"Assets/Scripts/WheelSegment.cs"
 -langversion:9.0
 
 /deterministic

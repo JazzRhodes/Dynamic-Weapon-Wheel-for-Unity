@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{28a7eee7-45af-8bca-338d-e394d8c1fb33}</ProjectGuid>
+    <ProjectGuid>{d2dacc60-e0ba-b24a-74a2-a5424e2d9c97}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -36,8 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\DynamicWeaponWheel\Scripts\Editor\WheelSegmentEditor.cs" />
-     <Compile Include="Assets\DynamicWeaponWheel\Scripts\Editor\DynamicWeaponWheelEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\WheelSegmentEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\DynamicWeaponWheelEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.0b2\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -318,34 +318,34 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.0b2\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.visualscripting@1.7.5\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.visualscripting@1.7.5\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.testtools.codecoverage@1.1.0\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.testtools.codecoverage@1.1.0\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.0b2\Editor\Data\PlaybackEngines\AppleTVSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -723,84 +723,84 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2022.1.0b2\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>C:\Users\Saxon\Documents\GitHub\Dynamic-Weapon-Wheel-for-Unity\DynamicWeaponWheel\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+        <HintPath>D:\Github\Dynamic-Weapon-Wheel-for-Unity\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{9650ad6d-0c25-f120-b7ac-e238ee95e899}</Project>
+      <Project>{48bc1dcd-5b2e-ac02-44d1-38ef98cc735e}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
